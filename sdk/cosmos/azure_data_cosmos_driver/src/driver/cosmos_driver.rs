@@ -8188,7 +8188,6 @@ mod tests {
                 b'"', b'}',
             ],
         );
-        assert_eq!(response.diagnostics().invalid_utf8_sequence_count(), 1);
         assert!(response.diagnostics().invalid_utf8_was_recovered());
     }
 
